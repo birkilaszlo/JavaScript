@@ -13,7 +13,6 @@ insertTransactionRow(-2000, new Date());
 
 transactions.forEach(function(transaction, index){
     insertTransactionRow(transaction.amount, new Date(transaction.date), index);
-    console.log("test");
 });
 
 
