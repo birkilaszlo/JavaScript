@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <input type="text" id="dateTime" placeholder="Tranzakció időpontja">
+        <input type="text" id="amount" placeholder="Összeg"><button id="store">Rögzít</button>
+        <p>Az egyenleged: <span id="balance">0</span></p>
+        <table id="transactions">
+            <tr>
+                <th>#</th>
+                <th>Dátum</th>
+                <th>Összeg</th>
+                <th>Műveletek</th>
+            </tr>
+        </table>
+        <div id="templates">
+            <table>
+                <tr class="transactions-row-template">
+                    <td class="transactions-id"></td>
+                    <td class="transactions-date"></td>
+                    <td class="transactions-amount"></td>
+                    <td class="transactions-operations">
+                        <button class = "delete-transaction" data-id="">Törlés</button>
+                    </td>
+                </tr>
+            </table> 
+            <div class="toast toast-template">
+
+
+            </div>
+        </div>
+        <div id="toast-container">
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
